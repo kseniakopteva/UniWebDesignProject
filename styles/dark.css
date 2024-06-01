@@ -1,0 +1,92 @@
+/*
+#77a2bd #033f63 #002b44
+#7facb2 #28666e #0f3e44
+#a5c7af #7c9885 #2e5039
+#d6d7ad #b5b682 #7c7d3a
+#fdf4e3 #fedc97 #df9600 #FDB21B
+
+#fff #302f39
+*/
+
+body, .bg-page {
+    background-color: #302f39;
+}
+
+h1 {
+    color: #df9600;
+}
+
+h2, h3 {
+    color: #df9600;
+}
+
+p {
+    color: #a5c7af;
+}
+
+.caption {
+    color: #77a2bd;
+    font-style: italic;
+}
+
+.note {
+    color: #df9600;
+}
+
+.theme-btn {
+    background-color: #7c9885;
+    color: #302f39;
+}
+
+.text-border {
+    text-shadow: -1px 0 #302f39, 0 1px #302f39, 1px 0 #302f39, 0 -1px #302f39;
+}
+
+.cutout {
+    background-color: #002b44;
+}
+
+.hero-section {
+    background-color: #0f3e44;
+    border: none;
+    border-bottom: 5px #df9600 solid;
+    border-top: 5px #df9600 solid;
+    height: 0px;
+}
+
+.hero-line {
+    background-color: #df9600;
+}
+
+.hero-desc {
+    background-color: #0f3e44;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sparrow-icon {
+    opacity: 1;
+}
+
+.quote p {
+    color: #b5b682;
+}
+
+.quote footer {
+    color: #77a2bd;
+}
+
+.footer {
+    background-color: #302f39;
+    border: solid 5px #FDB21B;
+    -webkit-box-shadow: 10px 10px 0px 0px #002b44;
+    -moz-box-shadow: 10px 10px 0px 0px #002b44;
+    box-shadow: 10px 10px 0px 0px #002b44;
+}
+
+.footer-line {
+    background-color: #a5c7af;
+
+}

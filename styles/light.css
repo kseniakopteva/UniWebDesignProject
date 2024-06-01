@@ -1,0 +1,101 @@
+/*
+#77a2bd #033f63 #002b44
+#7facb2 #28666e #0f3e44
+#a5c7af #7c9885 #2e5039
+#d6d7ad #b5b682 #7c7d3a
+#fdf4e3 #fedc97 #df9600 #FDB21B
+
+#fff #302f39
+*/
+
+body, .bg-page {
+    background-color: #fdf4e3;
+}
+
+h1 {
+    color: #033f63;
+}
+
+h2, h3 {
+    color: #28666e;
+}
+
+p {
+    color: #2e5039;
+}
+
+.caption {
+    color: #4F6456;
+    font-style: italic;
+}
+
+.note {
+    color: #754E00;
+}
+
+.theme-btn {
+    background-color: #d6d7ad;
+}
+
+.text-border {
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.cutout {
+    background-color: #033f63;
+    color: #fdf4e3;
+
+    /* background-color: hsl(0, 0%, 100%); */
+    /* background-color: #754E00;
+    color: #fedc97; */
+}
+
+
+.hero-section {
+    background-color: #fff;
+    border: none;
+    border-bottom: 5px #033f63 solid;
+
+
+
+    border-top: 5px #033f63 solid;
+    height: 0px;
+}
+
+.hero-line {
+    background-color: #033f63;
+}
+
+.hero-desc {
+    background-color: #fff;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.sparrow-icon {
+    opacity: 0.3;
+}
+
+.quote p {
+    color: #002b44;
+}
+
+.quote footer {
+    color: #2e5039;
+}
+
+.footer {
+    background-color: white;
+    border: solid 5px #002b44;
+    -webkit-box-shadow: 10px 10px 0px 0px #FDB21B;
+    -moz-box-shadow: 10px 10px 0px 0px #FDB21B;
+    box-shadow: 10px 10px 0px 0px #FDB21B;
+}
+
+.footer-line {
+    background-color: #033f63;
+
+}
