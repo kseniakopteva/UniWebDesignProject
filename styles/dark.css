@@ -12,11 +12,12 @@ body, .bg-page {
     background-color: #302f39;
 }
 
-h1 {
-    color: #df9600;
+body *::selection {
+    background-color: #a5c7af;
+    color: #002b44;
 }
 
-h2, h3 {
+h1, h2, h3, .note {
     color: #df9600;
 }
 
@@ -27,10 +28,6 @@ p {
 .caption {
     color: #77a2bd;
     font-style: italic;
-}
-
-.note {
-    color: #df9600;
 }
 
 .theme-btn {
@@ -70,23 +67,18 @@ p {
     opacity: 1;
 }
 
-.quote p {
+.quote * {
     color: #b5b682;
-}
-
-.quote footer {
-    color: #77a2bd;
 }
 
 .footer {
     background-color: #302f39;
-    border: solid 5px #FDB21B;
-    -webkit-box-shadow: 10px 10px 0px 0px #002b44;
-    -moz-box-shadow: 10px 10px 0px 0px #002b44;
-    box-shadow: 10px 10px 0px 0px #002b44;
 }
 
 .footer-line {
     background-color: #a5c7af;
+}
 
+.link {
+    color: #df9600;
 }
