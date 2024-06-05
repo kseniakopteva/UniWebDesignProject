@@ -5,7 +5,11 @@
 
 @font-face {
     font-family: "Pangolin";
-    src: URL("fonts/Pangolin_regular.ttf") format("truetype");
+    src: URL("../fonts/Pangolin-Regular.ttf") format("truetype");
+}
+
+body {
+    font-size: 16px;
 }
 
 * {

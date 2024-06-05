@@ -35,6 +35,10 @@ p {
     color: #000;
 }
 
+.theme-btn-font {
+    background-color: #7facb2;
+}
+
 .text-border {
     text-shadow: -1px 0 #302f39, 0 1px #302f39, 1px 0 #302f39, 0 -1px #302f39;
 }

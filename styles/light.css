@@ -38,6 +38,10 @@ p {
     background-color: #d6d7ad;
 }
 
+.theme-btn-font {
+    background-color: #7facb2;
+}
+
 .text-border {
     text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
