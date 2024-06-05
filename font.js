@@ -11,7 +11,7 @@ function change_font(increase, decrease) {
 // 22px - max, 12px - min
 
 function bigger_font() {
-    if (localStorage.getItem("font-size") <= 20 || localStorage.getItem("font-size") === nul) {
+    if (localStorage.getItem("font-size") <= 20 || localStorage.getItem("font-size") === null) {
         change_font(2, 0);
     }
     if (localStorage.getItem("font-size") == 22) {
