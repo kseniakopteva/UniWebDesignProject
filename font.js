@@ -44,7 +44,6 @@ function default_font() {
 
 function font_set() {
     var previouslySetFontSize = localStorage.getItem("font-size");
-    console.log(previouslySetFontSize);
     if (previouslySetFontSize === null) {
         document.getElementsByTagName("html")[0].style.fontSize = "16px";
     } else {
