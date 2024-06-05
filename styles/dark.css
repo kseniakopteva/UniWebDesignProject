@@ -63,6 +63,19 @@ p {
     background-color: #0f3e44;
 }
 
+p.hero-desc {
+    color: #B7D2BF
+}
+
+h2.hero-desc {
+
+    color: #FFBE3D;
+}
+
+.caption.hero-desc {
+    color: #BACEDE;
+}
+
 .overlay {
     background-color: rgba(0, 0, 0, 0.3);
 }

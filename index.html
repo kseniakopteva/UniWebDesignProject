@@ -11,251 +11,255 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <div style="font-size: 14px">
-            <div class="fixed z-20 right-5 rounded-b-md shadow-md theme-btn">
-                <a class="p-2 inline-block" href="#" onclick="theme_toggle(); return false;">Pārslēgt Krāsu Režīmu</a>
-            </div>
-            <div class="fixed z-20 left-5 bottom-0 rounded-t-md shadow-md theme-btn-font">
-                <a id="font-btn-larger" class="p-2 inline-block text-center" href="#" onclick="bigger_font(); return false;"
-                    >Lielāks <br />
-                    Teksts</a
-                >
-                <a id="font-btn-smaller" class="p-2 inline-block text-center" href="#" onclick="smaller_font(); return false;"
-                    >Mazāks<br />
-                    Teksts</a
-                >
-                <a id="font-btn-default" class="p-2 inline-block text-center" href="#" onclick="default_font(); return false;">Pēc <br />noklusējuma</a>
-            </div>
-        </div>
-        <section class="p-8 min-h-max max-h-fit h-full xl:px-32 lg:px-16 px-8 hero-section border-t-0 md:pt-16 pt-4 md:bg-[length:50%] bg-[length:100%]">
-            <div class="relative">
-                <div class="md:absolute z-10 w-full box-border">
-                    <h2 class="2xl:text-4xl xl:text-3xl md:text-2xl text-lg cutout mb-2 relative">Sveiki, šis ir</h2>
-                    <br />
-                    <h1 class="2xl:text-6xl xl:text-5xl md:text-4xl text-2xl cutout ml-8 lg:px-10 md:px-6">Mans Ceļš uz Latvijas Universitāti...</h1>
-                    <br />
-                    <h1 class="2xl:text-4xl xl:text-3xl md:text-2xl text-lg z-20 float-right mr-6 mb-4 cutout">...detaļās</h1>
-
-                    <div class="h-full xl:w-1/4 md:w-1/4 xl:mx-8">
-                        <hr class="xl:mt-16 md:mt-8 md:mb-6 hero-line mt-16 xl:mr-0 md:mr-16 mr-0 mb-4" />
-                        <p class="hero-desc lg:text-base text-sm p-2 mr-6 rounded-lg">Braukt vai iet katru dienu uz vienu un to pašu vietu var būt monotoni un garlaicīgi, tomēr, ja skatīties apkārt sev, var atrast daudz ko interesantu un iespaidošu.</p>
-                        <p class="hero-desc lg:text-base text-sm p-3 mr-6 rounded-lg">Šajā stāstā es mēģināšu parādīt visu to, kas piesaistīja manu uzmanību manā ceļā.</p>
-                    </div>
+        <main>
+            <div style="font-size: 14px">
+                <div class="fixed z-20 right-5 rounded-b-md shadow-md theme-btn">
+                    <a class="p-2 inline-block" href="#" onclick="theme_toggle(); return false;">Pārslēgt Krāsu Režīmu</a>
+                </div>
+                <div class="fixed z-20 left-5 bottom-0 rounded-t-md shadow-md theme-btn-font">
+                    <a id="font-btn-larger" class="p-2 inline-block text-center" href="#" onclick="bigger_font(); return false;"
+                        >Lielāks <br />
+                        Teksts</a
+                    >
+                    <a id="font-btn-smaller" class="p-2 inline-block text-center" href="#" onclick="smaller_font(); return false;"
+                        >Mazāks<br />
+                        Teksts</a
+                    >
+                    <a id="font-btn-default" class="p-2 inline-block text-center" href="#" onclick="default_font(); return false;">Pēc <br />noklusējuma</a>
                 </div>
             </div>
-            <div>
-                <div class="relative xl:w-4/6 md:w-3/4 w-full md:mt-32 mt-20 ml-auto">
-                    <img class="hero z-0" src="images/uni2.jpg" alt="Latvijas Universitātes ēka skatoties no malas" />
-                    <p class="md:text-base text-sm text-right pt-2 hero-desc absolute caption">Latvijas Universitātes galvenā ēka Raiņa Bulvārī 19</p>
-                </div>
-            </div>
-            <div class="text-right">
-                <h3 class="xl:text-xl md:text-xl text-lg mt-8 hero-desc">Lapas autore un fotogrāfe: <a class="underline italic" href="https://github.com/kseniakopteva">Ksenija Kopteva</a></h3>
-                <p class="text-lg"></p>
-            </div>
-        </section>
-        <section class="first-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-16">
-            <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Pirmā detaļa manā ceļojumā</h2>
-            <div class="sm:m-16 mt-8 m-3 mb-0">
-                <div class="relative sm:w-4/6 w-full float-left mr-16 mb-16">
-                    <img class="shadow-xl w-full h-full" src="images/bridge.jpg" alt="Tumša tilts apakšdaļa ar simetriski izvietotajām kolonnām" />
-                    <p class="md:text-base text-sm text-left pt-2 absolute -bottom-12 -left-8 caption">Dienvidu tilts apakšdaļa</p>
-                    <span class="md:text-xl text-base absolute -bottom-2 -right-2 -rotate-2 note cutout">Man šeit it īpaši patīk simetrija...</span>
-                </div>
-                <p>Savas darba dienas sākumā es iekāpju tramvajā un sāku savu ceļojumu Rīgas centrā uz Latvijas Universitāti.</p>
-                <p>
-                    Es braucu garām ēkām, veikaliem, parkiem un daudziem tiltiem. Viens no tiltiem, kam es braucu garām ir Dienvidu tilts, kas ir daudzu ceļu krustojums daudzos līmeņos. Tas atrodas Slāvu un Maskavas (tagad Latgales) ielas krustojumā, 7. tramvaja maršruta ziņā tas atrodas starp
-                    "Dienvidu tilts" un "Krasta masīvs" pieturām. Tas turpinās dienvidrietumos un ziemeļaustrumos, un abos virzienos atrodas krustojumi, kas no putnu lidojuma augstuma ir līdzīgi tā saucamajiem āboliņa formas krustojumiem. Viens no tiem atrodas Slāvu ielas un Krasta ielas krustojumā,
-                    otrais, savukārt, atrodas Slāvu ielas un Krustpils ielas krustojumā.
-                </p>
-                <p>
-                    Dienvidu tilts izskatās ļoti iespaidoši gan skatoties no liela augstuma, gan skatoties no kāda ceļa puses (tas izskatās iespaidoši vismaz tiem, kuriem patīk tilti un vispār lielas konstrukcijas un struktūras no betona); kā arī tas veido daudzus atvērtus "tuneļus" tilts apakšā,
-                    viens no tiem ir arī uztverts fotogrāfijā.
-                </p>
-            </div>
-        </section>
-        <section class="second-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20">
-            <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Parki un putni</h2>
-            <div class="sm:m-16 mt-8 m-3 mb-0">
-                <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 mb-8">
-                    <div class="relative col-span-2 sm:row-span-3 h-full">
-                        <img class="shadow-xl h-full object-cover mr-8" src="images/sparrow.jpg" alt="Zvirbulis zaros" />
-                        <p class="md:text-base text-sm text-left pt-2 absolute -left-28 bottom-12 -rotate-90 caption">Zvirbulis parka krūmos</p>
-                    </div>
+            <section class="p-8 min-h-max max-h-fit h-full xl:px-32 lg:px-16 px-8 hero-section border-t-0 md:pt-16 pt-4 md:bg-[length:50%] bg-[length:100%]">
+                <div class="relative">
+                    <div class="md:absolute z-10 w-full box-border">
+                        <h2 class="2xl:text-4xl xl:text-3xl md:text-2xl text-lg cutout mb-2 relative">Sveiki, šis ir</h2>
+                        <br />
+                        <h1 class="2xl:text-6xl xl:text-5xl md:text-4xl text-2xl cutout ml-8 lg:px-10 md:px-6">Mans Ceļš uz Latvijas Universitāti...</h1>
+                        <br />
+                        <h1 class="2xl:text-4xl xl:text-3xl md:text-2xl text-lg z-20 float-right mr-6 mb-4 cutout">...detaļās</h1>
 
-                    <div class="relative">
-                        <img class="shadow-xl -rotate-2" src="images/Sturnus_vulgaris.jpg" alt="Melnu līniju strazda zīmējums uz balta fona" />
-                        <span class="text-sm sm:absolute sm:bottom-2 sm:right-5 rotate-2 note cutout sm:m-0 mx-auto">Sturnus vulgaris</span>
-                    </div>
-                    <div class="relative">
-                        <img class="shadow-xl rotate-1" src="images/Parus.jpg" alt="Melnu līniju zīlītes zīmējums uz balta fona" />
-                        <span class="text-sm sm:absolute sm:-bottom-2 sm:-right-2 -rotate-2 note cutout sm:m-0 mx-auto">Parus</span>
-                    </div>
-                    <div class="relative">
-                        <img class="shadow-xl -rotate-1" src="images/Corvus_cornix.jpg" alt="Melnu līniju vārnas zīmējums uz balta fona" />
-                        <span class="text-sm sm:absolute sm:-bottom-2 sm:-right-2 -rotate-2 note cutout sm:m-0 mx-auto">Corvus cornix</span>
-                    </div>
-                    <div class="relative">
-                        <img class="shadow-xl rotate-1" src="images/Passer_domesticus.jpg" alt="Melnu līniju zvirbuļa zīmējums uz balta fona" />
-                        <span class="text-sm sm:absolute sm:bottom-5 sm:-right-2 -rotate-2 note cutout sm:m-0 mx-auto">Passer domesticus</span>
+                        <div class="h-full xl:w-1/4 md:w-1/4 xl:mx-8">
+                            <hr class="xl:mt-16 md:mt-8 md:mb-6 hero-line mt-16 xl:mr-0 md:mr-16 mr-0 mb-4" />
+                            <p class="hero-desc lg:text-base text-sm p-2 mr-6 rounded-lg">Braukt vai iet katru dienu uz vienu un to pašu vietu var būt monotoni un garlaicīgi, tomēr, ja skatīties apkārt sev, var atrast daudz ko interesantu un iespaidošu.</p>
+                            <p class="hero-desc lg:text-base text-sm p-3 mr-6 rounded-lg">Šajā stāstā es mēģināšu parādīt visu to, kas piesaistīja manu uzmanību manā ceļā.</p>
+                        </div>
                     </div>
                 </div>
-                <img class="sparrow-icon" id="sp_icon" src="images/sparrow_line.svg" alt="Zvirbuļa dekoratīva grafika" />
-                <p>
-                    Savā ceļā es braucu un eju garām trim parkiem - garām Maskavas (tagad Latgales) parkam, garām Nacionālās Operas skvēram un arī garām daļai Bastejkalna parka. Man ļoti patīk Bastejkalna parks un arī Operas skvērs, jo tur ir daudz ziedu, tur ir interesants reljefs, kā arī tiem ir
-                    ļoti ainaviski tekošā ūdens - pilsētas kanāls.
-                </p>
-                <p>
-                    Ar pavasara atnākšanu putni sāk dziedāt, un pēdējā laikā pastaigājoties es sāku vairāk pievērst uzmanību pie putnu dziedāšanas. Fotogrāfijā ir uztverts zvirbulis Maskavas parka krūmos rudens sākumā, un tagad skatoties uz šo fotogrāfiju man ir prieks, ka tagad ārā viss ir zaļš.
-                    Zīmējumos ir attēloti visbiežāk sastopamie putni manā ceļā uz Latvijas Universitāti.
-                </p>
-                <p>Tie putni ir: Mājas strazds, kas man ļoti patīk sava hologrāfiskā apspalvojuma dēļ, Zīlīte, Pelēkā vārna, un parastais Mājas zvirbulis.</p>
-                <p>Man ļoti patika fotografēt putnus, un tagad es saprotu cilvēkus, kas nodarbojas ar putnu vērošanu. Kad man nākotnē būs laiks, es obligāti pati arī nodarbošos ar šo interesantu vaļasprieku.</p>
-            </div>
-        </section>
-        <section class="third-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20">
-            <img class="bg" src="images/lilac.png" alt="Ceriņu grafiska ilustrācija" />
-            <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Ceriņi</h2>
-            <div class="sm:m-16 mt-8 m-3 mb-0">
-                <div class="relative 2xl:w-4/6 w-full float-right ml-10 mb-8">
-                    <img class="shadow-xl w-full h-full" src="images/lilac.jpg" alt="Ceriņu ziedi, visi ar četrām ziedlapiņām, centrā viens ar piecām" />
-                    <span class="md:text-xl text-base absolute -top-2 -left-5 -rotate-2 note cutout">Piecu ziedlapiņu ceriņu ziediņi ir jāēd veiksmei!</span>
-                    <p class="md:text-base text-sm text-right pt-2 caption">Fotogrāfija ir uzņemta blakus "Katoļu iela" pieturai</p>
+                <div>
+                    <div class="relative xl:w-4/6 md:w-3/4 w-full md:mt-32 mt-20 ml-auto">
+                        <img class="hero z-0" src="images/uni2.jpg" alt="Latvijas Universitātes ēka skatoties no malas" />
+                        <p class="md:text-base text-sm text-right pt-2 hero-desc absolute caption">Latvijas Universitātes galvenā ēka Raiņa Bulvārī 19</p>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <p class="indent-0 italic poem inline-block">
-                        Stumbling home after working the night<br />
-                        She came upon the lilac in bloom<br />
-                        Its purple, the scent and the sheltering height<br />
-                        Had allured her, and fully consumed.<br /><br />
-
-                        She searched for her luck in the world far and wide<br />
-                        Every day she searched for her place;<br />
-                        But the lilac, it granted her this peaceful night<br />
-                        Far from work, and the heat, and the race.<br /><br />
-
-                        She sat near the base of the branches of bronze<br />
-                        And looked through them up at the sky<br />
-                        Opaque silhouette, of the four-petal stars<br />
-                        Against the faint yellow skyline.<br /><br />
-
-                        In a moment - or more; a flower of five<br />
-                        Little petals descended the plant<br />
-                        In her palm landed softly - a token of luck<br />
-                        Was granted by the flower itself.<br /><br />
-
-                        Were lifted her worries, forgotten her errors;<br />
-                        Maybe only for this moment, only - in forever<br />
-                        She felt herself at peace in the lilac's mellow shadows<br />
-                        As she watched the sky, enchanted, <br />
-                        growing lighter, more than ever.<br />
+                <div class="text-right">
+                    <h2 class="xl:text-xl md:text-xl text-lg mt-8 hero-desc">Lapas autore un fotogrāfe: <a class="underline italic" href="https://github.com/kseniakopteva">Ksenija Kopteva</a></h2>
+                    <p class="text-lg"></p>
+                </div>
+            </section>
+            <section class="first-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-16">
+                <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Pirmā detaļa manā ceļojumā</h2>
+                <div class="sm:m-16 mt-8 m-3 mb-0">
+                    <div class="relative sm:w-4/6 w-full float-left mr-16 mb-16">
+                        <img class="shadow-xl w-full h-full" src="images/bridge.jpg" alt="Tumša tilts apakšdaļa ar simetriski izvietotajām kolonnām" />
+                        <p class="md:text-base text-sm text-left pt-2 absolute -bottom-12 -left-8 caption">Dienvidu tilts apakšdaļa</p>
+                        <span class="md:text-xl text-base absolute -bottom-2 -right-2 -rotate-2 note cutout">Man šeit it īpaši patīk simetrija...</span>
+                    </div>
+                    <p>Savas darba dienas sākumā es iekāpju tramvajā un sāku savu ceļojumu Rīgas centrā uz Latvijas Universitāti.</p>
+                    <p>
+                        Es braucu garām ēkām, veikaliem, parkiem un daudziem tiltiem. Viens no tiltiem, kam es braucu garām ir Dienvidu tilts, kas ir daudzu ceļu krustojums daudzos līmeņos. Tas atrodas Slāvu un Maskavas (tagad Latgales) ielas krustojumā, 7. tramvaja maršruta ziņā tas atrodas starp
+                        "Dienvidu tilts" un "Krasta masīvs" pieturām. Tas turpinās dienvidrietumos un ziemeļaustrumos, un abos virzienos atrodas krustojumi, kas no putnu lidojuma augstuma ir līdzīgi tā saucamajiem āboliņa formas krustojumiem. Viens no tiem atrodas Slāvu ielas un Krasta ielas
+                        krustojumā, otrais, savukārt, atrodas Slāvu ielas un Krustpils ielas krustojumā.
                     </p>
-                    <p class="text-right">"Lilac", 2024, by me</p>
-                </div>
-            </div>
-        </section>
-        <section class="relative fourth-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20">
-            <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Portāli</h2>
-            <div class="sm:m-16 mt-8 m-3 mb-0">
-                <div class="relative sm:w-4/6 w-full mx-auto mb-16">
-                    <img class="shadow-xl w-full h-full" src="images/green_bike.jpg" alt="Tumšs tunelis, kura beigās ir zaļi koki, krūmi un divritenis" />
-                    <p class="md:text-base text-sm text-left pt-2 absolute md:-left-48 md:bottom-28 md:-rotate-90 -bottom-12 -left-8 rotate-0 caption">Fotogrāfija ir uzņemta blakus Turgeņeva ielai</p>
-                    <span class="md:text-xl text-base absolute -bottom-2 -right-2 -rotate-2 note cutout">Ainavisks un kontrasta pilns tunelis</span>
-                </div>
-
-                <p class="p-4 bg-page">
-                    Tramvaja maršrutā ir ļoti daudz ēku un māju, un starp tām ir daudz māju ar iekšējām sētām. Ejot vai braucot tām garām, ir ļoti interesanti skatīties iekšā, jo tu nekad nezini, kas tur būs: tas var būt kādu mājas iedzīvotāju saraustītas garāžas, krāsainas puķu dobes, pakārta
-                    veļa... Kādreiz es redzēju uzgleznotus dzīvniekus uz mājas sienām, kolonnām, kā arī uz kokiem blakus mājai. Tie bija lapsiņas, ezīši (kā arī ezītis no "Ezītis miglā" multfilmas), vardītes, vāverītes, kaķīši, pelītes, pūces, mārītes un citi.
-                </p>
-                <p class="bg-page">
-                    Fotogrāfijā uztvertais "portāls" atrodas blakus Turgeņeva ielai (tagad Jēzusbaznīcas iela), šeit arī ir uztverts tunelis kā pirmajā šī lapas sadaļā. Man šeit patīk kontrasts starp tumšajām betona tuneļa sienām un zaļu, gaišu, dabisku ainavu, kas sākās tur kur sienas beidzas. Man
-                    arī patīk ļoti ainaviski novietots divritenis, kas izskatās ļoti aicinoši, it kā tas sauc skatītāju iziet caur šai arkai vai "portālam" un no pelēkas pilsētas nonākt kaut kādā neparastajā un maģiskajā pasaulē.
-                </p>
-            </div>
-        </section>
-        <section class="fifth-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20">
-            <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Zīmējumi Spīķeros</h2>
-            <div class="sm:m-16 mt-8 m-3 mb-0">
-                <div class="relative 2xl:w-4/6 w-full float-left mr-16 mb-8">
-                    <img class="shadow-xl w-full h-full" src="images/daugmale.jpg" alt="Stendi ar bērnu zīmējumiem" />
-                    <p class="md:text-base text-sm text-left pt-2 caption -ml-5">"Daugmale" centra audzēkņu darbi</p>
-                </div>
-                <p class="p-4">
-                    Kad es braucu garām Spīķeriem, es redzu izstādījumu "Bērnu un audzēkņu centra 'Daugmale' audzēkņu darbi Latvijai", kas tur atrodas jau kādu laiku. Pirmo reizi to redzot, es biju tik pārsteigta, ka uzreiz izkāpju no tramvaja lai paskatītos tuvāk. Un tad es tiešām kļuvu
-                    pārliecināta, par to, ko es redzēju.
-                </p>
-                <p>
-                    Tad kas tur bija? Viens no tiem uzliktiem uz stendiem darbiem bija (un arī ir) mans! Es to uztaisīju ļoti ļoti sen, kad es apmeklēju daudzās nodarbībās Daugmalē, kuru starpā bija arī nodarbība, kurā mācīja virtuālo grafiku programmās Inkscape, GIMP un Blender. Kad es tikai sāku,
-                    es zīmēju ar peli Paint programmā, un viens no maniem darbiem ir arī uzlikts uz izstādījuma. Pēc tam, man paradījas iespēja mēģināt zīmēt grafiskajā planšetē - arī šajā nodarbībā. Es atceros, ka tas bija ļoti neērti, kaut gan tagad es nevaru iedomāties zīmēt ar peli - kopš tā
-                    laika man bija jau dažas grafiskās planšetes - jaunāko es nopirku pavisam nesen.
-                </p>
-            </div>
-        </section>
-        <section class="sixth-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20 relative">
-            <img class="bg2" src="./images/graffiti.png" alt="Grafiti dekoratīva ilustrācija" />
-            <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Grafiti</h2>
-            <div class="sm:m-16 mt-8 m-3 mb-0">
-                <div class="relative 2xl:w-4/6 w-full float-right ml-16 mb-8">
-                    <img class="shadow-xl w-full h-full" src="images/cat_graffiti.jpg" alt="Kaķa galvas grafiti ēkas sienā Rīgas centrā" />
-                    <p class="md:text-base text-sm text-right pt-2 caption">Kaķa grafiti skaistā tirkīza krāsā</p>
-                </div>
-                <p class="p-4">Šajā sadaļā es gribu parunāt par grafiti - zīmējumiem ēku sienās.</p>
-                <p>
-                    Kaut gan daudziem pret grafiti ir stingri negatīva attieksme, man tā ir neitrāla. Man patīk daudzi interesanti vai smieklīgi vai radošie uzraksti, ko es redzu pilsētā. Viens to tādiem interesantiem un patīkamiem zīmējumiem ir uztverts fotogrāfijā - tas ir uzzīmēts ļoti augsti un
-                    atrodas blakus autoostai.
-                </p>
-                <p class="">
-                    Tomēr, es piekrītu tiem, kas uzskata, ka grafiti ir vandālisms, kad tas ir nekvalitatīvs un stulbs. Es redzēju daudzus uzrakstus, kuri ir uzrakstīti ar kļūdām angliski, vai eksistē tikai lai sabojātu kaut ko skaistu tā apakšā. Bet, uzskatot, ka grafiti ir normāli un tas ir vārda
-                    un izteiksmes brīvība, es neko neieteicu darīt - īpaši pārklāt to ar krāsu. Protams, tas jādara kaut kādos gadījumos, bet, piemēram, mājas kāpņu telpā to darīt, manuprāt, nav ieteicams, jo tas tikai sadusmos zīmētājus un viņi uzzīmēs kaut ko virsū. Ir jāgaida, kad tie
-                    "mākslinieki" izaugs vai pašam zīmēt kaut ko virsū (ko es, protams, neieteicu, jo tas ir nelegāli!).
-                </p>
-            </div>
-        </section>
-        <section class="seventh-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen max-h-fit h-full py-20">
-            <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Autoosta, pilsētas kanāls, un industriālisma arhitektūra</h2>
-            <div class="sm:m-16 mt-8 m-3 mb-0">
-                <div class="relative sm:w-4/6 w-full float-left mr-16 mb-16">
-                    <img class="shadow-xl w-full h-full" src="images/canal.jpg" alt="Skats no tramvaja pieturas uz pilsētas kanālu un autoostu" />
-                    <p class="md:text-base text-sm text-left pt-2 absolute -bottom-12 -left-8 caption">Rīgas autoosta</p>
-                </div>
-
-                <p class="p-4">
-                    Atbraucot Rīgas centrā, es redzu autoostu, kura ir paradīta fotogrāfijā. Šī vieta man patīk, jo šeit tek pilsētas kanāls un atrodas daudz interesantu ēku – piemēram, pašas autoostas un Rīgas Centrāltirgus paviljonu ēkas. Autoostas ēka man atgādina par industriālismu, pastāstīšu
-                    par to vairāk.
-                </p>
-                <p>
-                    Industriālisms paradījās 20. gadsimta sākuma rūpnieciskajā revolūcijā, un ietekmēja arhitektūras attīstību visā pasaulē. Padomju Savienībā šī tendence transformējās īpašā stilā, kas ietvēra funkcionālismu un pragmatismu, un Rīgas centrā ir ļoti daudz ēku, kas pieder
-                    industriālisma arhitektūras stilam.
-                </p>
-                <p>
-                    Fotogrāfijā ir redzama autoosta un tās apkārtne, kas, manuprāt, pieder šim stilam, jo tās ir funkcionālās un minimalistiskas ēkas. Kaut gan kādi var uzskatīt tās par pelēkām un vienkāršām, tie arī ir skaisti savā veidā. To pievilcība slēpjas funkcionālā estētikā un arhitektūras
-                    loģikā, kas tiek izteikta caur skaidrām līnijām, praktiskumu un ēku masīvumu. Šo ēku arhitektūrā dominē betons, stikls un metāls, kas tiek izmantoti, lai radītu stabilitātes un izturības iespaidu.
-                </p>
-                <p>
-                    Interesants ir arī tas, ka industriālisma funkcionālajās ēkas atspoguļo laikmeta dzīvesveidu un ideoloģiju, kur prioritāte bija piešķirta lietderībai pār estētiku. Šīs utilitāras un monotonas ēkas ir liecība par laikmetu, kad cilvēces progress tika mērīts ar rūpnīcu skaitu un
-                    industriālo progresu, nevis ar arhitektūras izsmalcinātību. Tātad, manuprāt, šīs ēkas ir ne tikai vēsturiski nozīmīgas, bet arī satur savu unikālo estētisko vērtību.
-                </p>
-            </div>
-        </section>
-
-        <section class="bg-[url('images/uni1.jpg')] bg-center bg-cover min-h-screen max-h-fit h-full">
-            <div class="w-full overlay backdrop-blur-sm min-h-screen h-full flex justify-center items-center hero-section border-b-0 md:bg-[length:50%] bg-[length:100%]">
-                <div class="text-center lg:w-1/2 md:w-1/2 w-full m-16 footer relative lg:p-16 lg:pt-8 md:p-8 p-8">
-                    <h2 class="2xl:text-4xl xl:text-3xl md:text-2xl text-lg lg:w-72 w-56 -mt-10 absolute cutout top-0 lg:left-[calc(50%-8rem)] left-[calc(50%-7rem)]">Tas ir viss!</h2>
-                    <p class="lg:text-xl md:text-lg text-base md:mt-8 text-left">
-                        Mans stāsts šeit beidzās - pēc pāris pieturām man jāiziet un pēc pāris minūtēm es jau esmu <a href="https://www.lu.lv/" class="link italic underline">Latvijas Universitātē</a>, gatava klausīties kādu lekciju vai nodarboties kādā praktiskajā nodarbībā.
+                    <p>
+                        Dienvidu tilts izskatās ļoti iespaidoši gan skatoties no liela augstuma, gan skatoties no kāda ceļa puses (tas izskatās iespaidoši vismaz tiem, kuriem patīk tilti un vispār lielas konstrukcijas un struktūras no betona); kā arī tas veido daudzus atvērtus "tuneļus" tilts
+                        apakšā, viens no tiem ir arī uztverts fotogrāfijā.
                     </p>
-                    <p class="lg:text-xl md:text-lg text-base">Paldies par šīs lapas lasīšanu! Es ceru, ka mans stāsts bija interesants un uz detaļu novērošanu aicinošs!</p>
-                    <p class="lg:text-xl md:text-lg text-base">Uz redzēšanos!</p>
-                    <p class="lg:text-xl md:text-lg text-base text-right italic">- Ksenija</p>
-                    <hr class="md:mt-6 md:mb-8 mx-16 mb-8 hero-line" />
-                    <blockquote class="quote">
-                        <p class="indent-0 md:text-lg text-base italic font-[Georgia]">“Noticing details, that was good. Tiny slivers of life – they all added up and helped you to feel that you too could be a fragment, a little piece of humanity who usefully filled a space, however minuscule”.</p>
-                        <footer class="md:text-base text-sm font-bold text-right">- Gail Honeyman, <cite>Eleanor Oliphant is Completely Fine</cite></footer>
-                    </blockquote>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="second-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20">
+                <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Parki un putni</h2>
+                <div class="sm:m-16 mt-8 m-3 mb-0">
+                    <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 mb-8">
+                        <div class="relative col-span-2 sm:row-span-3 h-full">
+                            <img class="shadow-xl h-full object-cover mr-8" src="images/sparrow.jpg" alt="Zvirbulis zaros" />
+                            <p class="md:text-base text-sm text-left pt-2 absolute -left-28 bottom-12 -rotate-90 caption">Zvirbulis parka krūmos</p>
+                        </div>
+
+                        <div class="relative">
+                            <img class="shadow-xl -rotate-2" src="images/Sturnus_vulgaris.jpg" alt="Melnu līniju strazda zīmējums uz balta fona" />
+                            <span class="text-sm sm:absolute sm:bottom-2 sm:right-5 rotate-2 note cutout sm:m-0 mx-auto">Sturnus vulgaris</span>
+                        </div>
+                        <div class="relative">
+                            <img class="shadow-xl rotate-1" src="images/Parus.jpg" alt="Melnu līniju zīlītes zīmējums uz balta fona" />
+                            <span class="text-sm sm:absolute sm:-bottom-2 sm:-right-2 -rotate-2 note cutout sm:m-0 mx-auto">Parus</span>
+                        </div>
+                        <div class="relative">
+                            <img class="shadow-xl -rotate-1" src="images/Corvus_cornix.jpg" alt="Melnu līniju vārnas zīmējums uz balta fona" />
+                            <span class="text-sm sm:absolute sm:-bottom-2 sm:-right-2 -rotate-2 note cutout sm:m-0 mx-auto">Corvus cornix</span>
+                        </div>
+                        <div class="relative">
+                            <img class="shadow-xl rotate-1" src="images/Passer_domesticus.jpg" alt="Melnu līniju zvirbuļa zīmējums uz balta fona" />
+                            <span class="text-sm sm:absolute sm:bottom-5 sm:-right-2 -rotate-2 note cutout sm:m-0 mx-auto">Passer domesticus</span>
+                        </div>
+                    </div>
+                    <img class="sparrow-icon" id="sp_icon" src="images/sparrow_line.svg" alt="Zvirbuļa dekoratīva grafika" />
+                    <p>
+                        Savā ceļā es braucu un eju garām trim parkiem - garām Maskavas (tagad Latgales) parkam, garām Nacionālās Operas skvēram un arī garām daļai Bastejkalna parka. Man ļoti patīk Bastejkalna parks un arī Operas skvērs, jo tur ir daudz ziedu, tur ir interesants reljefs, kā arī tiem
+                        ir ļoti ainaviski tekošā ūdens - pilsētas kanāls.
+                    </p>
+                    <p>
+                        Ar pavasara atnākšanu putni sāk dziedāt, un pēdējā laikā pastaigājoties es sāku vairāk pievērst uzmanību pie putnu dziedāšanas. Fotogrāfijā ir uztverts zvirbulis Maskavas parka krūmos rudens sākumā, un tagad skatoties uz šo fotogrāfiju man ir prieks, ka tagad ārā viss ir
+                        zaļš. Zīmējumos ir attēloti visbiežāk sastopamie putni manā ceļā uz Latvijas Universitāti.
+                    </p>
+                    <p>Tie putni ir: Mājas strazds, kas man ļoti patīk sava hologrāfiskā apspalvojuma dēļ, Zīlīte, Pelēkā vārna, un parastais Mājas zvirbulis.</p>
+                    <p>Man ļoti patika fotografēt putnus, un tagad es saprotu cilvēkus, kas nodarbojas ar putnu vērošanu. Kad man nākotnē būs laiks, es obligāti pati arī nodarbošos ar šo interesantu vaļasprieku.</p>
+                </div>
+            </section>
+            <section class="third-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20">
+                <img class="bg" src="images/lilac.png" alt="Ceriņu grafiska ilustrācija" />
+                <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Ceriņi</h2>
+                <div class="sm:m-16 mt-8 m-3 mb-0">
+                    <div class="relative 2xl:w-4/6 w-full float-right ml-10 mb-8">
+                        <img class="shadow-xl w-full h-full" src="images/lilac.jpg" alt="Ceriņu ziedi, visi ar četrām ziedlapiņām, centrā viens ar piecām" />
+                        <span class="md:text-xl text-base absolute -top-2 -left-5 -rotate-2 note cutout">Piecu ziedlapiņu ceriņu ziediņi ir jāēd veiksmei!</span>
+                        <p class="md:text-base text-sm text-right pt-2 caption">Fotogrāfija ir uzņemta blakus "Katoļu iela" pieturai</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="indent-0 italic poem inline-block">
+                            Stumbling home after working the night<br />
+                            She came upon the lilac in bloom<br />
+                            Its purple, the scent and the sheltering height<br />
+                            Had allured her, and fully consumed.<br /><br />
+
+                            She searched for her luck in the world far and wide<br />
+                            Every day she searched for her place;<br />
+                            But the lilac, it granted her this peaceful night<br />
+                            Far from work, and the heat, and the race.<br /><br />
+
+                            She sat near the base of the branches of bronze<br />
+                            And looked through them up at the sky<br />
+                            Opaque silhouette, of the four-petal stars<br />
+                            Against the faint yellow skyline.<br /><br />
+
+                            In a moment - or more; a flower of five<br />
+                            Little petals descended the plant<br />
+                            In her palm landed softly - a token of luck<br />
+                            Was granted by the flower itself.<br /><br />
+
+                            Were lifted her worries, forgotten her errors;<br />
+                            Maybe only for this moment, only - in forever<br />
+                            She felt herself at peace in the lilac's mellow shadows<br />
+                            As she watched the sky, enchanted, <br />
+                            growing lighter, more than ever.<br />
+                        </p>
+                        <p class="text-right">"Lilac", 2024, by me</p>
+                    </div>
+                </div>
+            </section>
+            <section class="relative fourth-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20">
+                <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Portāli</h2>
+                <div class="sm:m-16 mt-8 m-3 mb-0">
+                    <div class="relative sm:w-4/6 w-full mx-auto mb-16">
+                        <img class="shadow-xl w-full h-full" src="images/green_bike.jpg" alt="Tumšs tunelis, kura beigās ir zaļi koki, krūmi un divritenis" />
+                        <p class="md:text-base text-sm text-left pt-2 absolute md:-left-48 md:bottom-28 md:-rotate-90 -bottom-12 -left-8 rotate-0 caption">Fotogrāfija ir uzņemta blakus Turgeņeva ielai</p>
+                        <span class="md:text-xl text-base absolute -bottom-2 -right-2 -rotate-2 note cutout">Ainavisks un kontrasta pilns tunelis</span>
+                    </div>
+
+                    <p class="p-4 bg-page">
+                        Tramvaja maršrutā ir ļoti daudz ēku un māju, un starp tām ir daudz māju ar iekšējām sētām. Ejot vai braucot tām garām, ir ļoti interesanti skatīties iekšā, jo tu nekad nezini, kas tur būs: tas var būt kādu mājas iedzīvotāju saraustītas garāžas, krāsainas puķu dobes, pakārta
+                        veļa... Kādreiz es redzēju uzgleznotus dzīvniekus uz mājas sienām, kolonnām, kā arī uz kokiem blakus mājai. Tie bija lapsiņas, ezīši (kā arī ezītis no "Ezītis miglā" multfilmas), vardītes, vāverītes, kaķīši, pelītes, pūces, mārītes un citi.
+                    </p>
+                    <p class="bg-page">
+                        Fotogrāfijā uztvertais "portāls" atrodas blakus Turgeņeva ielai (tagad Jēzusbaznīcas iela), šeit arī ir uztverts tunelis kā pirmajā šī lapas sadaļā. Man šeit patīk kontrasts starp tumšajām betona tuneļa sienām un zaļu, gaišu, dabisku ainavu, kas sākās tur kur sienas beidzas.
+                        Man arī patīk ļoti ainaviski novietots divritenis, kas izskatās ļoti aicinoši, it kā tas sauc skatītāju iziet caur šai arkai vai "portālam" un no pelēkas pilsētas nonākt kaut kādā neparastajā un maģiskajā pasaulē.
+                    </p>
+                </div>
+            </section>
+            <section class="fifth-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20">
+                <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Zīmējumi Spīķeros</h2>
+                <div class="sm:m-16 mt-8 m-3 mb-0">
+                    <div class="relative 2xl:w-4/6 w-full float-left mr-16 mb-8">
+                        <img class="shadow-xl w-full h-full" src="images/daugmale.jpg" alt="Stendi ar bērnu zīmējumiem" />
+                        <p class="md:text-base text-sm text-left pt-2 caption -ml-5">"Daugmale" centra audzēkņu darbi</p>
+                    </div>
+                    <p class="p-4">
+                        Kad es braucu garām Spīķeriem, es redzu izstādījumu "Bērnu un audzēkņu centra 'Daugmale' audzēkņu darbi Latvijai", kas tur atrodas jau kādu laiku. Pirmo reizi to redzot, es biju tik pārsteigta, ka uzreiz izkāpju no tramvaja lai paskatītos tuvāk. Un tad es tiešām kļuvu
+                        pārliecināta, par to, ko es redzēju.
+                    </p>
+                    <p>
+                        Tad kas tur bija? Viens no tiem uzliktiem uz stendiem darbiem bija (un arī ir) mans! Es to uztaisīju ļoti ļoti sen, kad es apmeklēju daudzās nodarbībās Daugmalē, kuru starpā bija arī nodarbība, kurā mācīja virtuālo grafiku programmās Inkscape, GIMP un Blender. Kad es tikai
+                        sāku, es zīmēju ar peli Paint programmā, un viens no maniem darbiem ir arī uzlikts uz izstādījuma. Pēc tam, man paradījas iespēja mēģināt zīmēt grafiskajā planšetē - arī šajā nodarbībā. Es atceros, ka tas bija ļoti neērti, kaut gan tagad es nevaru iedomāties zīmēt ar peli -
+                        kopš tā laika man bija jau dažas grafiskās planšetes - jaunāko es nopirku pavisam nesen.
+                    </p>
+                </div>
+            </section>
+            <section class="sixth-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen py-20 relative">
+                <img class="bg2" src="./images/graffiti.png" alt="Grafiti dekoratīva ilustrācija" />
+                <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Grafiti</h2>
+                <div class="sm:m-16 mt-8 m-3 mb-0">
+                    <div class="relative 2xl:w-4/6 w-full float-right ml-16 mb-8">
+                        <img class="shadow-xl w-full h-full" src="images/cat_graffiti.jpg" alt="Kaķa galvas grafiti ēkas sienā Rīgas centrā" />
+                        <p class="md:text-base text-sm text-right pt-2 caption">Kaķa grafiti skaistā tirkīza krāsā</p>
+                    </div>
+                    <p class="p-4">Šajā sadaļā es gribu parunāt par grafiti - zīmējumiem ēku sienās.</p>
+                    <p>
+                        Kaut gan daudziem pret grafiti ir stingri negatīva attieksme, man tā ir neitrāla. Man patīk daudzi interesanti vai smieklīgi vai radošie uzraksti, ko es redzu pilsētā. Viens to tādiem interesantiem un patīkamiem zīmējumiem ir uztverts fotogrāfijā - tas ir uzzīmēts ļoti augsti
+                        un atrodas blakus autoostai.
+                    </p>
+                    <p class="">
+                        Tomēr, es piekrītu tiem, kas uzskata, ka grafiti ir vandālisms, kad tas ir nekvalitatīvs un stulbs. Es redzēju daudzus uzrakstus, kuri ir uzrakstīti ar kļūdām angliski, vai eksistē tikai lai sabojātu kaut ko skaistu tā apakšā. Bet, uzskatot, ka grafiti ir normāli un tas ir
+                        vārda un izteiksmes brīvība, es neko neieteicu darīt - īpaši pārklāt to ar krāsu. Protams, tas jādara kaut kādos gadījumos, bet, piemēram, mājas kāpņu telpā to darīt, manuprāt, nav ieteicams, jo tas tikai sadusmos zīmētājus un viņi uzzīmēs kaut ko virsū. Ir jāgaida, kad tie
+                        "mākslinieki" izaugs vai pašam zīmēt kaut ko virsū (ko es, protams, neieteicu, jo tas ir nelegāli!).
+                    </p>
+                </div>
+            </section>
+            <section class="seventh-section xl:px-32 lg:px-16 sm:px-8 px-2 min-h-screen max-h-fit h-full py-20">
+                <h2 class="md:text-4xl sm:text-3xl text-2xl sm:ml-16 ml-1">Autoosta, pilsētas kanāls, un industriālisma arhitektūra</h2>
+                <div class="sm:m-16 mt-8 m-3 mb-0">
+                    <div class="relative sm:w-4/6 w-full float-left mr-16 mb-16">
+                        <img class="shadow-xl w-full h-full" src="images/canal.jpg" alt="Skats no tramvaja pieturas uz pilsētas kanālu un autoostu" />
+                        <p class="md:text-base text-sm text-left pt-2 absolute -bottom-12 -left-8 caption">Rīgas autoosta</p>
+                    </div>
+
+                    <p class="p-4">
+                        Atbraucot Rīgas centrā, es redzu autoostu, kura ir paradīta fotogrāfijā. Šī vieta man patīk, jo šeit tek pilsētas kanāls un atrodas daudz interesantu ēku – piemēram, pašas autoostas un Rīgas Centrāltirgus paviljonu ēkas. Autoostas ēka man atgādina par industriālismu,
+                        pastāstīšu par to vairāk.
+                    </p>
+                    <p>
+                        Industriālisms paradījās 20. gadsimta sākuma rūpnieciskajā revolūcijā, un ietekmēja arhitektūras attīstību visā pasaulē. Padomju Savienībā šī tendence transformējās īpašā stilā, kas ietvēra funkcionālismu un pragmatismu, un Rīgas centrā ir ļoti daudz ēku, kas pieder
+                        industriālisma arhitektūras stilam.
+                    </p>
+                    <p>
+                        Fotogrāfijā ir redzama autoosta un tās apkārtne, kas, manuprāt, pieder šim stilam, jo tās ir funkcionālās un minimalistiskas ēkas. Kaut gan kādi var uzskatīt tās par pelēkām un vienkāršām, tie arī ir skaisti savā veidā. To pievilcība slēpjas funkcionālā estētikā un
+                        arhitektūras loģikā, kas tiek izteikta caur skaidrām līnijām, praktiskumu un ēku masīvumu. Šo ēku arhitektūrā dominē betons, stikls un metāls, kas tiek izmantoti, lai radītu stabilitātes un izturības iespaidu.
+                    </p>
+                    <p>
+                        Interesants ir arī tas, ka industriālisma funkcionālajās ēkas atspoguļo laikmeta dzīvesveidu un ideoloģiju, kur prioritāte bija piešķirta lietderībai pār estētiku. Šīs utilitāras un monotonas ēkas ir liecība par laikmetu, kad cilvēces progress tika mērīts ar rūpnīcu skaitu un
+                        industriālo progresu, nevis ar arhitektūras izsmalcinātību. Tātad, manuprāt, šīs ēkas ir ne tikai vēsturiski nozīmīgas, bet arī satur savu unikālo estētisko vērtību.
+                    </p>
+                </div>
+            </section>
+
+            <section class="bg-[url('images/uni1.jpg')] bg-center bg-cover min-h-screen max-h-fit h-full">
+                <div class="w-full overlay backdrop-blur-sm min-h-screen h-full flex justify-center items-center hero-section border-b-0 md:bg-[length:50%] bg-[length:100%]">
+                    <div class="text-center lg:w-1/2 md:w-1/2 w-full m-16 footer relative lg:p-16 lg:pt-8 md:p-8 p-8">
+                        <h2 class="2xl:text-4xl xl:text-3xl md:text-2xl text-lg lg:w-72 w-56 -mt-10 absolute cutout top-0 lg:left-[calc(50%-8rem)] left-[calc(50%-7rem)]">Tas ir viss!</h2>
+                        <p class="lg:text-xl md:text-lg text-base md:mt-8 text-left">
+                            Mans stāsts šeit beidzās - pēc pāris pieturām man jāiziet un pēc pāris minūtēm es jau esmu <a href="https://www.lu.lv/" class="link italic underline">Latvijas Universitātē</a>, gatava klausīties kādu lekciju vai nodarboties kādā praktiskajā nodarbībā.
+                        </p>
+                        <p class="lg:text-xl md:text-lg text-base">Paldies par šīs lapas lasīšanu! Es ceru, ka mans stāsts bija interesants un uz detaļu novērošanu aicinošs!</p>
+                        <p class="lg:text-xl md:text-lg text-base">Uz redzēšanos!</p>
+                        <p class="lg:text-xl md:text-lg text-base text-right italic">- Ksenija</p>
+                        <hr class="md:mt-6 md:mb-8 mx-16 mb-8 hero-line" />
+                        <blockquote class="quote">
+                            <p class="indent-0 md:text-lg text-base italic font-[Georgia]">
+                                “Noticing details, that was good. Tiny slivers of life – they all added up and helped you to feel that you too could be a fragment, a little piece of humanity who usefully filled a space, however minuscule”.
+                            </p>
+                            <footer class="md:text-base text-sm font-bold text-right">- Gail Honeyman, <cite>Eleanor Oliphant is Completely Fine</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
     <script src="theme.js" type="text/javascript"></script>
     <script src="font.js" type="text/javascript"></script>
