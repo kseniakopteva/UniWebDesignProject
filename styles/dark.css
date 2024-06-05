@@ -18,7 +18,7 @@ body *::selection {
 }
 
 h1, h2, h3, .note {
-    color: #df9600;
+    color: #FFAD0A;
 }
 
 p {
@@ -26,13 +26,13 @@ p {
 }
 
 .caption {
-    color: #77a2bd;
+    color: #A5C1D4;
     font-style: italic;
 }
 
 .theme-btn {
-    background-color: #7c9885;
-    color: #302f39;
+    background-color: #819C8A;
+    color: #000;
 }
 
 .text-border {
@@ -68,7 +68,7 @@ p {
 }
 
 .quote * {
-    color: #b5b682;
+    color: #C3C398;
 }
 
 .footer {
@@ -80,5 +80,5 @@ p {
 }
 
 .link {
-    color: #df9600;
+    color: #FFAD0A;
 }
